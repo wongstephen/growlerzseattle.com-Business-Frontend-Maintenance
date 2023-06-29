@@ -1,0 +1,24 @@
+name: Digital Ocean Growlerz Maintainence CD
+
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+      - run: npm ci
+      - uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.  DO_USERNAME }}
+          key: ${{ secrets.DO_KEY }}
+          port: 22
+          script: |
+            cd /var/www/growlerz-api
+            sudo git pull
+            sudo npm ci
