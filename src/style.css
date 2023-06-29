@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Instrument+Sans&display=swap");
+
+/* font-family: 'Climate Crisis', cursive;
+font-family: 'Instrument Sans', sans-serif; */
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 1rem;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+}
+
+#banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6rem;
+  height: 40vh;
+  position: relative;
+}
+#banner-title {
+  font-family: "Climate Crisis", cursive;
+  color: rgb(20 184 166);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.banner-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.banner-icon:first-of-type {
+  top: 0;
+  left: 0;
+}
+
+.banner-icon:nth-of-type(2) {
+  top: 0;
+  right: 0;
+}
+
+.banner-icon:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.banner-icon:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+
+#title {
+  font-size: 3.25em;
+  line-height: 1.1;
+  font-family: "Climate Crisis", cursive;
+  word-wrap: break-word;
+  margin-bottom: 2rem;
+}
+
+#body-content {
+  font-family: "Instrument Sans", sans-serif;
+  line-height: 1.75;
+  letter-spacing: 2px;
+}
+
+#disclaimer {
+  font-family: "Instrument Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}
+
+#app {
+  width: 100%;
+}
