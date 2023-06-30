@@ -13,4 +13,5 @@ job:
         with:
           node-version: "18.x"
       - run: npm ci
+      - run: npm build --if-present
       - run: npm test
