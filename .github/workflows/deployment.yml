@@ -19,7 +19,7 @@ jobs:
           key: ${{ secrets.DO_KEY }}
           port: 22
           script: |
-            cd /var/www/growlerz-api
+            cd /var/www/growlerz-maintainence
             sudo git pull
             sudo npm ci
             sudo npm run build --if-present
